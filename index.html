@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YommyGold | Architecture & Interior Designs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">YommyGold</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#interiors">Interiors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to YommyGold</h1>
+    <p>Bringing your vision to life through timeless architecture and stunning interiors</p>
+    <a href="#services" class="btn">Explore Our Services</a>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      YommyGold is a Nigeria-based design company specializing in architecture and interior design. With a commitment to elegance, innovation, and functionality, we transform spaces into lasting legacies. Our team of architects and decorators ensures that each project reflects our client's unique taste while meeting the highest standards of construction and aesthetics.
+    </p>
+    <p>
+      Whether you're building a dream home or giving your space a premium interior makeover, we’re here to deliver beauty with precision.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Architectural Design & Planning</h3>
+        <p>We design structures that are functional, elegant, and tailored to your vision. From private residences to commercial projects, YommyGold delivers blueprints that inspire confidence.</p>
+        <a href="#booking" class="btn">Book a Consultation</a>
+      </div>
+      <div class="service">
+        <h3>Interior Design & Styling</h3>
+        <p>We curate spaces with tastefully selected furniture, textures, lighting, and art. Whether minimalist, luxury, or Afro-modern, our interiors blend comfort with style.</p>
+        <a href="#interiors" class="btn">View Interior Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Our Projects</h2>
+    <p>Explore our signature projects in both architecture and interior designs across Nigeria.</p>
+    <div class="project-gallery">
+      <div class="project">
+        <img src="assets/images/architecture1.jpg" alt="Modern Duplex Design" />
+        <p>Contemporary Duplex, Lagos</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/interior1.jpg" alt="Interior Living Room" />
+        <p>Luxury Interior Setup, Abuja</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/architecture2.jpg" alt="Commercial Building" />
+        <p>Office Complex, Port Harcourt</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/interior2.jpg" alt="Bedroom Decor" />
+        <p>Modern Bedroom Design, Ibadan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="booking">
+    <h2>Book an Architectural Consultation</h2>
+    <!-- Booking form integrated with Formsubmit -->
+    <form id="booking-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+      <!-- Honeypot field to prevent spam -->
+      <input type="text" name="_honey" style="display:none">
+      <!-- Disable CAPTCHA notice -->
+      <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="project" placeholder="Project Type (e.g., Residential, Office)" required />
+      <textarea name="description" placeholder="Describe Your Project"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <!-- Interior Design Gallery -->
+  <section id="interiors" class="interiors">
+    <h2>Interior Design Showcase</h2>
+    <div class="project-gallery">
+      <img src="assets/images/interior3.jpg" alt="Dining Room Setup" />
+      <img src="assets/images/interior4.jpg" alt="Luxury Bedroom" />
+      <img src="assets/images/interior5.jpg" alt="Office Interior" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have a project in mind or want to learn more? Reach out to us.</p>
+    <!-- Enhanced contact form with Formspree integration -->
+    <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <!-- Honeypot field to prevent spam -->
+      <input type="text" name="_honey" style="display:none">
+      <!-- Disable CAPTCHA notice -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-details">
+      <p><strong>Email:</strong> info@yommygold.com.ng</p>
+      <p><strong>Phone:</strong> +234 803 000 1234</p>
+      <p><strong>Office:</strong> Lekki Phase 1, Lagos, Nigeria</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 YommyGold. Designed with passion in Nigeria.</p>
+  </footer>
+
+  <!-- Ensure script file is linked and available -->
+  <script src="script.js"></script>
+</body>
+</html>
